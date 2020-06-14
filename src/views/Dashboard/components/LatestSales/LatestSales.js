@@ -26,6 +26,10 @@ const useStyles = makeStyles(() => ({
   },
   actions: {
     justifyContent: 'flex-end'
+  },
+  map: {
+    width: '100%',
+    height: '100%'
   }
 }));
 
@@ -53,7 +57,7 @@ const LatestSales = props => {
       <Divider />
       <CardContent>
         <div className={classes.chartContainer}>
-          <img src={mapa} />
+          <img src={mapa} className={classes.map} />
         </div>
       </CardContent>
       <Divider />
